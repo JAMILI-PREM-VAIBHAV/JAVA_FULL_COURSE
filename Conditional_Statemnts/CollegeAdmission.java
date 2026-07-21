@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+class CollegeAdmission{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the marks: ");
+        int marks=sc.nextInt();
+        if(marks>=75){
+            System.out.println("Enterance exam qualified.");
+        }
+        else{
+            System.out.println("Not qualified");
+        }
+    }
+}
