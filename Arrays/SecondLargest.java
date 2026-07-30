@@ -8,6 +8,7 @@ class SecondLargest{
         int arr[]=new int[size];
         if(size<2){
             System.out.println("No largest element");
+            return;
         }
         System.out.println("Enter array elements: ");
         for(int i=0;i<size;i++){
@@ -24,9 +25,13 @@ class SecondLargest{
             System.out.print(arr[i]+" ");
         }
         System.out.println();
+        int largest=arr[size-1];
+        boolean found=false;
         for(int i=size-1;i>=0;i--){
-            if(i==size-2){
-                System.out.print(arr[i]);
+            if(arr[i]!=largest){
+                System.out.println(arr[i]);
+                found=true;
+                break;
             }
         }
     }
